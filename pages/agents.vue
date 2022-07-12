@@ -16,13 +16,13 @@ const selectRandomAgent = () => {
 <template>
   <div>
     <div class="flex gap-2">
-      <button class="btn" @click="agentsStore.selectAllAgents">
+      <button class="btn btn-success" @click="agentsStore.selectAllAgents">
         Select All
       </button>
-      <button class="btn" @click="agentsStore.unselectAllAgents">
+      <button class="btn btn-error" @click="agentsStore.unselectAllAgents">
         Unselect All
       </button>
-      <button class="btn" @click="selectRandomAgent">
+      <button class="btn btn-primary" @click="selectRandomAgent">
         Get Random Agent
       </button>
     </div>

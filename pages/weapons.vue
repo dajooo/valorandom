@@ -16,13 +16,13 @@ const selectRandomWeapon = () => {
 <template>
   <div>
     <div class="flex gap-2">
-      <button class="btn" @click="weaponStore.selectAllWeapons">
+      <button class="btn btn-success" @click="weaponStore.selectAllWeapons">
         Select All
       </button>
-      <button class="btn" @click="weaponStore.unselectAllWeapons">
+      <button class="btn btn-error" @click="weaponStore.unselectAllWeapons">
         Unselect All
       </button>
-      <button class="btn" @click="selectRandomWeapon">
+      <button class="btn btn-primary" @click="selectRandomWeapon">
         Get Random Weapon
       </button>
     </div>
