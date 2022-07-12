@@ -6,7 +6,7 @@ const agentsStore = useAgentsStore()
 await agentsStore.loadAgents()
 
 const roll = () => {
-  if (agentsStore.selectedAgent.length === 0)
+  if (agentsStore.selectedAgents.length === 0)
     agentsStore.selectedAgent = agentsStore.agents[Math.floor(Math.random() * agentsStore.agents.length)].uuid
   else
     agentsStore.selectedAgent = agentsStore.selectedAgents[Math.floor(Math.random() * agentsStore.selectedAgents.length)]
