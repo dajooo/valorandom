@@ -9,8 +9,8 @@ export const useAgentsStore = defineStore('agents', () => {
 
   const loadAgents = async () => {
     if (agents.value.length > 0) return
-    const fetchedAgents = await $fetch<ValorantAgentsResponse>('https://valorant-api.com/v1/agents')
-    agents.value = fetchedAgents.data.filter(agent => agent.isPlayableCharacter)
+    const { data: fetchedAgents } = await useFetch<ValorantAgentsResponse>('https://valorant-api.com/v1/agents')
+    agents.value = fetchedAgents.value.data.filter(agent => agent.isPlayableCharacter)
     if (selectedAgentsStore.value)
       selectedAgents.value = selectedAgentsStore.value.split(',')
   }

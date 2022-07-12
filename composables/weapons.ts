@@ -9,8 +9,8 @@ export const useWeaponsStore = defineStore('weapons', () => {
 
   const loadWeapons = async () => {
     if (weapons.value.length > 0) return
-    const fetchedWeapons = await $fetch<ValorantWeaponsResponse>('https://valorant-api.com/v1/weapons')
-    weapons.value = fetchedWeapons.data
+    const { data: fetchedWeapons } = await useFetch<ValorantWeaponsResponse>('https://valorant-api.com/v1/weapons')
+    weapons.value = fetchedWeapons.value.data
     if (selectedWeaponsStore.value)
       selectedWeapons.value = selectedWeaponsStore.value.split(',')
   }
