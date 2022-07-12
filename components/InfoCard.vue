@@ -1,5 +1,19 @@
 <script setup lang="ts">
-const { selected, highlighted } = defineProps<{ image: string; title: string; subtitle?: string; selected: boolean; highlighted: boolean }>()
+interface InfoCardProps {
+  image: string
+  title: string
+  subtitle?: string
+  selected: boolean
+  highlighted: boolean
+}
+
+const {
+  image,
+  title,
+  subtitle,
+  selected,
+  highlighted,
+} = defineProps<InfoCardProps>()
 
 const colors = {
   defaultColor: 'bg-truegray-200 dark:bg-truegray-800',
@@ -25,7 +39,7 @@ watchEffect(() => {
 <template>
   <button
     :class="colorClasses"
-    class="w-full flex items-center rounded-sm"
+    class="w-full flex items-center rounded-sm shadow-md"
   >
     <img class="w-24 h-24 object-contain m-2" :src="image" :alt="title">
     <div class="flex flex-col justify-center">

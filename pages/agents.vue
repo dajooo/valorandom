@@ -5,7 +5,7 @@ definePageMeta({
 const agentsStore = useAgentsStore()
 await agentsStore.loadAgents()
 
-const roll = () => {
+const selectRandomAgent = () => {
   if (agentsStore.selectedAgents.length === 0)
     agentsStore.selectedAgent = agentsStore.agents[Math.floor(Math.random() * agentsStore.agents.length)].uuid
   else
@@ -17,13 +17,13 @@ const roll = () => {
   <div>
     <div class="flex gap-2">
       <button class="btn" @click="agentsStore.selectAllAgents">
-        Select all
+        Select All
       </button>
       <button class="btn" @click="agentsStore.unselectAllAgents">
-        Unselect all
+        Unselect All
       </button>
-      <button class="btn" @click="roll">
-        Roll
+      <button class="btn" @click="selectRandomAgent">
+        Get Random Agent
       </button>
     </div>
     <ul class="grid grid-cols-4 gap-4 mt-4">

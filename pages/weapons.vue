@@ -5,7 +5,7 @@ definePageMeta({
 const weaponStore = useWeaponsStore()
 await weaponStore.loadWeapons()
 
-const roll = () => {
+const selectRandomWeapon = () => {
   if (weaponStore.selectedWeapons.length === 0)
     weaponStore.selectedWeapon = weaponStore.weapons[Math.floor(Math.random() * weaponStore.weapons.length)].uuid
   else
@@ -17,13 +17,13 @@ const roll = () => {
   <div>
     <div class="flex gap-2">
       <button class="btn" @click="weaponStore.selectAllWeapons">
-        Select all
+        Select All
       </button>
       <button class="btn" @click="weaponStore.unselectAllWeapons">
-        Unselect all
+        Unselect All
       </button>
-      <button class="btn" @click="roll">
-        Roll
+      <button class="btn" @click="selectRandomWeapon">
+        Select Random Weapon
       </button>
     </div>
     <ul class="grid grid-cols-4 gap-4 mt-4">
