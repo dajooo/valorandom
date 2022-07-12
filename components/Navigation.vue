@@ -5,10 +5,10 @@ interface Link {
 }
 
 const links = ref<Link[]>([
-  {
-    name: 'Home',
-    href: '/',
-  },
+  // {
+  //   name: 'Home',
+  //   href: '/',
+  // },
   {
     name: 'Weapons',
     href: '/weapons',
@@ -21,7 +21,7 @@ const links = ref<Link[]>([
 </script>
 
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between items-center">
     <div class="p-2">
       <DarkToggle />
     </div>

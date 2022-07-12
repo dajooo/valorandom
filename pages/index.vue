@@ -1,10 +1,11 @@
+<script setup lang="ts">
+const router = useRouter()
+
+router.push({
+  name: 'agents',
+})
+</script>
+
 <template>
-  <div class="flex gap-2">
-    <NuxtLink to="/agents" class="btn">
-      Agents
-    </NuxtLink>
-    <NuxtLink to="/weapons" class="btn">
-      Weapons
-    </NuxtLink>
-  </div>
+  <span />
 </template>
