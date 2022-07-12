@@ -23,7 +23,7 @@ const selectRandomWeapon = () => {
         Unselect All
       </button>
       <button class="btn" @click="selectRandomWeapon">
-        Select Random Weapon
+        Get Random Weapon
       </button>
     </div>
     <ul class="grid grid-cols-4 gap-4 mt-4">
