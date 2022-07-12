@@ -9,10 +9,6 @@ useHead({
     },
   ],
 })
-const { loadAgents } = useAgentsStore()
-await loadAgents()
-const { loadWeapons } = useWeaponsStore()
-await loadWeapons()
 </script>
 
 <template>

@@ -3,6 +3,7 @@ definePageMeta({
   layout: 'picker',
 })
 const weaponStore = useWeaponsStore()
+await weaponStore.loadWeapons()
 
 const roll = () => {
   if (weaponStore.selectedWeapons.length === 0)

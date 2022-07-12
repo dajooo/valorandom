@@ -3,6 +3,7 @@ definePageMeta({
   layout: 'picker',
 })
 const agentsStore = useAgentsStore()
+await agentsStore.loadAgents()
 
 const roll = () => {
   if (agentsStore.selectedAgent.length === 0)

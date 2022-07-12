@@ -8,6 +8,7 @@ export const useAgentsStore = defineStore('agents', () => {
   const selectedAgent = ref('')
 
   const loadAgents = async () => {
+    if (agents.value.length > 0) return
     const fetchedAgents = await $fetch<ValorantAgentsResponse>('https://valorant-api.com/v1/agents')
     agents.value = fetchedAgents.data.filter(agent => agent.isPlayableCharacter)
     if (selectedAgentsStore.value)
