@@ -7,7 +7,7 @@ const { agent } = defineProps<{ agent: ValorantAgent }>()
 const {
   selectedAgents,
   selectedAgent,
-} = storeToRefs(useAgentsStore())
+} = $(storeToRefs(useAgentsStore()))
 
 const {
   selectAgent,
@@ -15,7 +15,7 @@ const {
 } = useAgentsStore()
 
 const toggleSelect = () => {
-  if (selectedAgents.value.includes(agent.uuid))
+  if (selectedAgents.includes(agent.uuid))
     unselectAgent(agent.uuid)
   else
     selectAgent(agent.uuid)

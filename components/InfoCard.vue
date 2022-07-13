@@ -22,17 +22,17 @@ const colors = {
   selectedAndHighlighted: 'bg-red-300 dark:bg-red-700',
 }
 
-const colorClasses = ref(colors.defaultColor)
+let colorClasses = $ref(colors.defaultColor)
 
 watchEffect(() => {
   if (highlighted) {
     if (selected)
-      colorClasses.value = colors.selectedAndHighlighted
+      colorClasses = colors.selectedAndHighlighted
     else
-      colorClasses.value = colors.highlighted
+      colorClasses = colors.highlighted
   }
-  else if (selected) { colorClasses.value = colors.selected }
-  else { colorClasses.value = colors.defaultColor }
+  else if (selected) { colorClasses = colors.selected }
+  else { colorClasses = colors.defaultColor }
 })
 </script>
 

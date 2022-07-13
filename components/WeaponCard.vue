@@ -7,7 +7,7 @@ const { weapon } = defineProps<{ weapon: ValorantWeapon }>()
 const {
   selectedWeapons,
   selectedWeapon,
-} = storeToRefs(useWeaponsStore())
+} = $(storeToRefs(useWeaponsStore()))
 
 const {
   selectWeapon,
@@ -15,7 +15,7 @@ const {
 } = useWeaponsStore()
 
 const toggleSelect = () => {
-  if (selectedWeapons.value.includes(weapon.uuid))
+  if (selectedWeapons.includes(weapon.uuid))
     unselectWeapon(weapon.uuid)
   else
     selectWeapon(weapon.uuid)
