@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   },
   image: {
     domains: ['media.valorant-api.com'],
+    provider: 'ipx',
   },
   pwa: {
     workbox: {
