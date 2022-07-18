@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
+    '@kevinmarrec/nuxt-pwa',
+    '@nuxt/image-edge',
   ],
   experimental: {
     reactivityTransform: true,
@@ -16,5 +18,13 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: '',
+  },
+  image: {
+    domains: ['media.valorant-api.com'],
+  },
+  pwa: {
+    workbox: {
+      enabled: true,
+    },
   },
 })

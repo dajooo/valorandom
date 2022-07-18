@@ -1,13 +1,6 @@
 <script setup>
 useHead({
-  title: 'Valorant Random',
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/nuxt.png',
-    },
-  ],
+  title: 'Valorandom',
 })
 </script>
 

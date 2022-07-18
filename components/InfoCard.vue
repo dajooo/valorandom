@@ -41,7 +41,7 @@ watchEffect(() => {
     :class="colorClasses"
     class="w-full flex items-center rounded-sm shadow-md"
   >
-    <img class="w-24 h-24 object-contain m-2" :src="image" :alt="title">
+    <nuxt-img format="webp" class="w-24 h-24 object-contain m-2" :src="image" :alt="title" />
     <div class="flex flex-col justify-center">
       <h3 class="text-2xl">
         {{ title }}

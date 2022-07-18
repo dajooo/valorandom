@@ -15,7 +15,7 @@ const selectRandomAgent = () => {
 
 <template>
   <div>
-    <div class="flex gap-2">
+    <div class="flex flex-col md:flex-row gap-2">
       <button class="btn btn-success" @click="agentsStore.selectAllAgents">
         Select All
       </button>
@@ -26,7 +26,7 @@ const selectRandomAgent = () => {
         Get Random Agent
       </button>
     </div>
-    <ul class="grid grid-cols-4 gap-4 mt-4">
+    <ul class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
       <li v-for="agent in agentsStore.agents" :key="agent.uuid">
         <AgentCard :agent="agent" />
       </li>
