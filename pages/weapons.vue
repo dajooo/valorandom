@@ -47,7 +47,7 @@ const priceCategories = $ref([
       </div>
       <div class="flex flex-col lg:flex-row gap-2">
         <button v-for="priceCategory in priceCategories" :key="priceCategory.name" class="btn btn-primary" @click="weaponStore.selectWeaponsInPriceRange(priceCategory.min, priceCategory.max)">
-          {{ priceCategory.name }} <span class="text-sm text-truegray-300">${{ priceCategory.max }}</span>
+          {{ priceCategory.name }} <span class="text-sm text-gray-300">${{ priceCategory.max }}</span>
         </button>
       </div>
     </div>

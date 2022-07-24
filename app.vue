@@ -18,7 +18,6 @@ html, body, #__nuxt {
 }
 
 html.dark {
-  background: #222;
-  color: white;
+  @apply bg-gray-900 text-white;
 }
 </style>
