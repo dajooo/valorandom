@@ -1,6 +1,6 @@
 # Valorandom
 
-[Valorandom](https://valorandom.vercel.app) is a random agent/weapon picker for Valorant.
+Valorandom is a random agent/weapon picker for Valorant.
 
 You can find a running instance of this project at [valorandom.vercel.app](https://valorandom.vercel.app).
 
