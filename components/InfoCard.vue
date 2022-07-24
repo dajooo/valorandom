@@ -25,8 +25,8 @@ const {
     }"
     class="relative w-full flex items-center rounded-lg shadow-md overflow-hidden"
   >
-    <nuxt-img format="webp" class="w-24 h-24 object-contain m-2" :src="image" :alt="title" />
-    <div class="flex flex-col justify-center">
+    <nuxt-img format="webp" class="w-24 h-24 object-contain m-2 z-1" :src="image" :alt="title" />
+    <div class="flex flex-col justify-center z-1">
       <h3 class="text-2xl">
         {{ title }}
       </h3>
