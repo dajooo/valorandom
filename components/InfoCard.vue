@@ -43,7 +43,10 @@ const {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
-  box-shadow: 10px 10px 100px 60px rgba(59, 130, 246, .5);
+  left: 35%;
+  width: 30%;
+  box-shadow: 0 0 100px 40px rgba(59, 130, 246, .5);
+  -webkit-box-shadow: 0 0 100px 40px rgba(59, 130, 246, .5);
+  -moz-box-shadow: 0 0 100px 40px rgba(59, 130, 246, .5);
 }
 </style>
