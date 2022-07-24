@@ -4,12 +4,12 @@
 
 You can find a running instance of this project at [valorandom.vercel.app](https://valorandom.vercel.app).
 
-# Features
+## Features
 
 - Randomly picks an agent and weapon based on your selection.
 - Quickly select weapons for certain price ranges.
 
-# Bugs, feature requests, and feedback
+## Bugs, feature requests, and feedback
 
 If you want to provide feedback, report a bug, or request a feature, please open an issue in
 the [issue section](https://github.com/dajooo/valorandom/issues). I'm open for any kind of feedback
