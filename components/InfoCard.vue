@@ -20,7 +20,7 @@ const {
   <button
     :class="{
       'bg-gray-200 dark:bg-gray-800': !selected,
-      'bg-gray-400 dark:bg-gray-700': selected,
+      'bg-gray-400 dark:bg-extragray': selected,
       'border-b-.3rem border-blue-500 -mb-1.2 card-glow': highlighted,
     }"
     class="relative w-full flex items-center rounded-lg shadow-md overflow-hidden"

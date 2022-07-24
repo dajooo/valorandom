@@ -14,6 +14,7 @@ export default defineConfig({
   theme: {
     colors: {
       gray: colors!.zinc,
+      extragray: '#333338',
     },
   },
   shortcuts: [
