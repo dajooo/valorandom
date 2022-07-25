@@ -12,7 +12,7 @@ specifiers:
   '@unocss/nuxt': 0.44.7
   '@vueuse/nuxt': 8.9.4
   eslint: 8.20.0
-  nuxt: 3.0.0-rc.5
+  nuxt: 3.0.0-rc.6
   pinia: 2.0.16
   typescript: 4.7.4
 
@@ -28,7 +28,7 @@ devDependencies:
   '@unocss/nuxt': 0.44.7
   '@vueuse/nuxt': 8.9.4
   eslint: 8.20.0
-  nuxt: 3.0.0-rc.5
+  nuxt: 3.0.0-rc.6
   pinia: 2.0.16_typescript@4.7.4
   typescript: 4.7.4
 
@@ -4765,8 +4765,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /nuxt/3.0.0-rc.5:
-    resolution: {integrity: sha512-8OphTqJMy84enJ+N3gwM5/FcBlSDFOPdtlhezJmwnXRVoVaYAPPApJsAESx9zqmuzsRRfcQ00tjVFT1XYzSv0A==}
+  /nuxt/3.0.0-rc.6:
+    resolution: {integrity: sha512-Ko/LBIUBf25bSXKoRnPEplMngw2dHU8qkV5Twdm7yZ0DfdFkwaTVzTtwvbWsFt+H9vh1aUUTCSyEWnmNorkkxQ==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     hasBin: true
     dependencies:
