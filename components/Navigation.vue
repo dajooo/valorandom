@@ -26,7 +26,7 @@ const links = ref<Link[]>([
     <div class="flex items-center gap-2 p-4">
       <ul class="flex gap-4">
         <li v-for="link in links" :key="link.href">
-          <NuxtLink :to="link.href">
+          <NuxtLink :to="link.href" active-class="text-shadow-md text-shadow-blue-200">
             {{ link.name }}
           </NuxtLink>
         </li>

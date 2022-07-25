@@ -1,0 +1,145 @@
+[
+  {
+    "uuid": "63e6c2b6-4a8e-869c-3d4c-e38355226584",
+    "displayName": "Odin",
+    "displayIcon": "https://media.valorant-api.com/weapons/63e6c2b6-4a8e-869c-3d4c-e38355226584/displayicon.png",
+    "category": "Heavy",
+    "defaultSkinUuid": "f454efd1-49cb-372f-7096-d394df615308",
+    "cost": 3200
+  },
+  {
+    "uuid": "55d8a0f4-4274-ca67-fe2c-06ab45efdf58",
+    "displayName": "Ares",
+    "displayIcon": "https://media.valorant-api.com/weapons/55d8a0f4-4274-ca67-fe2c-06ab45efdf58/displayicon.png",
+    "category": "Heavy",
+    "defaultSkinUuid": "5305d9c4-4f46-fbf4-9e9a-dea772c263b5",
+    "cost": 1600
+  },
+  {
+    "uuid": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+    "displayName": "Vandal",
+    "displayIcon": "https://media.valorant-api.com/weapons/9c82e19d-4575-0200-1a81-3eacf00cf872/displayicon.png",
+    "category": "Rifle",
+    "defaultSkinUuid": "27f21d97-4c4b-bd1c-1f08-31830ab0be84",
+    "cost": 2900
+  },
+  {
+    "uuid": "ae3de142-4d85-2547-dd26-4e90bed35cf7",
+    "displayName": "Bulldog",
+    "displayIcon": "https://media.valorant-api.com/weapons/ae3de142-4d85-2547-dd26-4e90bed35cf7/displayicon.png",
+    "category": "Rifle",
+    "defaultSkinUuid": "724a7f42-4315-eccf-0e76-77bdd3ec2e09",
+    "cost": 2050
+  },
+  {
+    "uuid": "ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a",
+    "displayName": "Phantom",
+    "displayIcon": "https://media.valorant-api.com/weapons/ee8e8d15-496b-07ac-e5f6-8fae5d4c7b1a/displayicon.png",
+    "category": "Rifle",
+    "defaultSkinUuid": "337cb216-4a6e-d85d-88c2-f29ab317784c",
+    "cost": 2900
+  },
+  {
+    "uuid": "ec845bf4-4f79-ddda-a3da-0db3774b2794",
+    "displayName": "Judge",
+    "displayIcon": "https://media.valorant-api.com/weapons/ec845bf4-4f79-ddda-a3da-0db3774b2794/displayicon.png",
+    "category": "Shotgun",
+    "defaultSkinUuid": "acd26127-48ff-8b9e-7ba6-b989af8a4b24",
+    "cost": 1850
+  },
+  {
+    "uuid": "910be174-449b-c412-ab22-d0873436b21b",
+    "displayName": "Bucky",
+    "displayIcon": "https://media.valorant-api.com/weapons/910be174-449b-c412-ab22-d0873436b21b/displayicon.png",
+    "category": "Shotgun",
+    "defaultSkinUuid": "70c97fb2-4d79-d4bb-5173-a1888cd4bfd9",
+    "cost": 850
+  },
+  {
+    "uuid": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+    "displayName": "Frenzy",
+    "displayIcon": "https://media.valorant-api.com/weapons/44d4e95c-4157-0037-81b2-17841bf2e8e3/displayicon.png",
+    "category": "Sidearm",
+    "defaultSkinUuid": "f06657f3-48b6-6314-7235-a9a2749df5b9",
+    "cost": 450
+  },
+  {
+    "uuid": "29a0cfab-485b-f5d5-779a-b59f85e204a8",
+    "displayName": "Classic",
+    "displayIcon": "https://media.valorant-api.com/weapons/29a0cfab-485b-f5d5-779a-b59f85e204a8/displayicon.png",
+    "category": "Sidearm",
+    "defaultSkinUuid": "24aee897-4cdc-b0fd-e596-1ba90fa6d1b2",
+    "cost": 0
+  },
+  {
+    "uuid": "1baa85b4-4c70-1284-64bb-6481dfc3bb4e",
+    "displayName": "Ghost",
+    "displayIcon": "https://media.valorant-api.com/weapons/1baa85b4-4c70-1284-64bb-6481dfc3bb4e/displayicon.png",
+    "category": "Sidearm",
+    "defaultSkinUuid": "1c63b43b-43c4-04e4-01c9-7aa1bffa5ac1",
+    "cost": 500
+  },
+  {
+    "uuid": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+    "displayName": "Sheriff",
+    "displayIcon": "https://media.valorant-api.com/weapons/e336c6b8-418d-9340-d77f-7a9e4cfe0702/displayicon.png",
+    "category": "Sidearm",
+    "defaultSkinUuid": "1ef6ba68-4dbe-30c7-6bc8-93a6c6f13f04",
+    "cost": 800
+  },
+  {
+    "uuid": "42da8ccc-40d5-affc-beec-15aa47b42eda",
+    "displayName": "Shorty",
+    "displayIcon": "https://media.valorant-api.com/weapons/42da8ccc-40d5-affc-beec-15aa47b42eda/displayicon.png",
+    "category": "Sidearm",
+    "defaultSkinUuid": "48ad078a-4dae-2b85-a945-f4b6d1efecbb",
+    "cost": 150
+  },
+  {
+    "uuid": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+    "displayName": "Operator",
+    "displayIcon": "https://media.valorant-api.com/weapons/a03b24d3-4319-996d-0f8c-94bbfba1dfc7/displayicon.png",
+    "category": "Sniper",
+    "defaultSkinUuid": "d1f2920f-469a-3431-ad96-96afbd0017f2",
+    "cost": 4700
+  },
+  {
+    "uuid": "4ade7faa-4cf1-8376-95ef-39884480959b",
+    "displayName": "Guardian",
+    "displayIcon": "https://media.valorant-api.com/weapons/4ade7faa-4cf1-8376-95ef-39884480959b/displayicon.png",
+    "category": "Rifle",
+    "defaultSkinUuid": "3bf1e8e0-47e8-f27a-6054-929575f41a54",
+    "cost": 2250
+  },
+  {
+    "uuid": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+    "displayName": "Marshal",
+    "displayIcon": "https://media.valorant-api.com/weapons/c4883e50-4494-202c-3ec3-6b8a9284f00b/displayicon.png",
+    "category": "Sniper",
+    "defaultSkinUuid": "fd44b2d5-49ee-77ab-fa56-588f3ac0c268",
+    "cost": 950
+  },
+  {
+    "uuid": "462080d1-4035-2937-7c09-27aa2a5c27a7",
+    "displayName": "Spectre",
+    "displayIcon": "https://media.valorant-api.com/weapons/462080d1-4035-2937-7c09-27aa2a5c27a7/displayicon.png",
+    "category": "SMG",
+    "defaultSkinUuid": "f01d1307-4299-42f5-2c5e-7dab7e69ab19",
+    "cost": 1600
+  },
+  {
+    "uuid": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+    "displayName": "Stinger",
+    "displayIcon": "https://media.valorant-api.com/weapons/f7e1b454-4ad4-1063-ec0a-159e56b58941/displayicon.png",
+    "category": "SMG",
+    "defaultSkinUuid": "940fb417-4a9c-3004-41f5-3e8f1f4178b2",
+    "cost": 950
+  },
+  {
+    "uuid": "2f59173c-4bed-b6c3-2191-dea9b58be9c7",
+    "displayName": "Melee",
+    "displayIcon": "https://media.valorant-api.com/weapons/2f59173c-4bed-b6c3-2191-dea9b58be9c7/displayicon.png",
+    "category": "Melee",
+    "defaultSkinUuid": "12cc9ed2-4430-d2fe-3064-f7a19b1ba7c7"
+  }
+]

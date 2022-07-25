@@ -1,5 +1,4 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type { ValorantWeapon } from '~/valorantapi'
 
 export const useWeaponsStore = defineStore('weapons', () => {
   let weapons = $ref<ValorantWeapon[]>([])
@@ -11,8 +10,9 @@ export const useWeaponsStore = defineStore('weapons', () => {
   const loadWeapons = async () => {
     if (weapons.length > 0)
       return
-    const { data: fetchedWeapons } = await useValorantApi<ValorantWeapon[]>('weapons')
-    weapons = fetchedWeapons
+
+    const { data: fetchedWeapons } = await useFetch<ValorantWeapon[]>('/api/weapons')
+    weapons = fetchedWeapons.value
     if (selectedWeaponsCookie)
       selectedWeapons = selectedWeaponsCookie.split(',')
   }
@@ -28,7 +28,11 @@ export const useWeaponsStore = defineStore('weapons', () => {
   }
 
   const selectWeaponsInPriceRange = (minPrice: number, maxPrice: number) => {
-    selectWeapons(weapons.filter(weapon => weapon.shopData?.cost >= minPrice && weapon.shopData?.cost <= maxPrice).map(weapon => weapon.uuid))
+    selectWeapons(weapons
+      .filter(weapon => weapon.cost !== undefined)
+      .filter(weapon => weapon.cost! >= minPrice && weapon.cost! <= maxPrice)
+      .map(weapon => weapon.uuid),
+    )
   }
 
   const selectAllWeapons = () => {

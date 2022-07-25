@@ -3,7 +3,6 @@ definePageMeta({
   layout: 'picker',
 })
 const agentsStore = useAgentsStore()
-await agentsStore.loadAgents()
 
 const selectRandomAgent = () => {
   if (agentsStore.selectedAgents.length === 0)

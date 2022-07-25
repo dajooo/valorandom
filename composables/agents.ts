@@ -1,5 +1,4 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type { ValorantAgent } from '~/valorantapi'
 
 export const useAgentsStore = defineStore('agents', () => {
   let agents = $ref<ValorantAgent[]>([])
@@ -10,8 +9,8 @@ export const useAgentsStore = defineStore('agents', () => {
   const loadAgents = async () => {
     if (agents.length > 0)
       return
-    const { data: fetchedAgents } = await useValorantApi<ValorantAgent[]>('agents')
-    agents = fetchedAgents.filter(agent => agent.isPlayableCharacter)
+    const { data: fetchedAgents } = await useFetch<ValorantAgent[]>('/api/agents')
+    agents = fetchedAgents.value
     if (selectedAgentsCookie)
       selectedAgents = selectedAgentsCookie.split(',')
   }
