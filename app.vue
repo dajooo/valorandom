@@ -2,6 +2,7 @@
 useHead({
   title: 'Valorandom',
 })
+
 const agentsStore = useAgentsStore()
 await agentsStore.loadAgents()
 const weaponsStore = useWeaponsStore()

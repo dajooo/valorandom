@@ -1,17 +1,17 @@
-interface ValorantAgentRole {
+export interface ValorantAgentRole {
     uuid: string
     displayName: string
     displayIcon: string
 }
 
-interface ValorantAgent {
+export interface ValorantAgent {
     uuid: string
     displayName: string
     displayIconSmall: string
     role: string
 }
 
-interface ValorantWeapon {
+export interface ValorantWeapon {
     uuid: string,
     displayName: string,
     displayIcon: string,

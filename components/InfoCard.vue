@@ -17,24 +17,24 @@ const {
 </script>
 
 <template>
-  <button
+  <div
     :class="{
       'bg-gray-200 dark:bg-gray-800': !selected,
       'bg-gray-400 dark:bg-extragray': selected,
       'border-b-.3rem border-blue-500 -mb-1.2 card-glow': highlighted,
     }"
-    class="relative w-full flex items-center rounded-lg shadow-md overflow-hidden"
+    class="relative w-full flex items-center rounded-lg shadow-md overflow-hidden cursor-pointer"
   >
     <nuxt-img format="webp" class="w-24 h-24 object-contain m-2 z-1" :src="image" :alt="title" />
-    <div class="flex flex-col justify-center z-1">
+    <div class="z-1">
       <h3 class="text-2xl">
         {{ title }}
       </h3>
-      <p v-if="subtitle" class="text-gray-700 dark:text-gray-200">
+      <p v-if="subtitle" class="text-gray-600 dark:text-gray-300">
         {{ subtitle }}
       </p>
     </div>
-  </button>
+  </div>
 </template>
 
 <style scoped>

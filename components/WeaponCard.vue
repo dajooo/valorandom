@@ -26,7 +26,7 @@ const toggleSelect = () => {
   <InfoCard
     :image="weapon.displayIcon"
     :title="weapon.displayName"
-    :subtitle="weapon.shopData && weapon.shopData.cost ? `$${weapon.shopData.cost}` : undefined"
+    :subtitle="weapon.cost ? `$${weapon.cost}` : undefined"
     :selected="selectedWeapons.includes(weapon.uuid)"
     :highlighted="selectedWeapon === weapon.uuid"
     @click="toggleSelect"

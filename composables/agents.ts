@@ -1,4 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import type { ValorantAgent } from '~/valorantapi'
 
 export const useAgentsStore = defineStore('agents', () => {
   let agents = $ref<ValorantAgent[]>([])

@@ -1,4 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import type { ValorantWeapon } from '~/valorantapi'
 
 export const useWeaponsStore = defineStore('weapons', () => {
   let weapons = $ref<ValorantWeapon[]>([])
