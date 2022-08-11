@@ -23,4 +23,9 @@ export default defineNuxtConfig({
     domains: ['media.valorant-api.com'],
     provider: 'ipx',
   },
+  pwa: {
+    meta: {
+      name: 'Valorandom',
+    },
+  },
 })

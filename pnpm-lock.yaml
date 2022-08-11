@@ -17,6 +17,9 @@ specifiers:
   pinia: 2.0.18
   typescript: 4.7.4
 
+dependencies:
+  '@nuxtjs/web-vitals': 0.1.10
+
 devDependencies:
   '@antfu/eslint-config': 0.26.1_qugx7qdu5zevzvxaiqyxfiwquq
   '@iconify-json/carbon': 1.1.7
@@ -25,7 +28,6 @@ devDependencies:
   '@nuxt/image': 0.7.1
   '@nuxt/image-edge': 1.0.0-27657146.da85542
   '@nuxtjs/color-mode': 3.1.4
-  '@nuxtjs/web-vitals': 0.1.10
   '@pinia/nuxt': 0.4.0_typescript@4.7.4
   '@unocss/nuxt': 0.45.6
   '@vueuse/nuxt': 9.1.0
@@ -983,7 +985,7 @@ packages:
       defu: 6.0.0
       ufo: 0.8.5
       web-vitals: 2.1.4
-    dev: true
+    dev: false
 
   /@pinia/nuxt/0.4.0_typescript@4.7.4:
     resolution: {integrity: sha512-gJ0qRJ5KhpFrYVs6qdqTWXPp9DAzbs9u74zJw5hyQO7tRiItRUYQxbWtWjGC3XUw5oO73xYrA8lYa5/GMW0uSg==}
@@ -2480,7 +2482,6 @@ packages:
 
   /defu/6.0.0:
     resolution: {integrity: sha512-t2MZGLf1V2rV4VBZbWIaXKdX/mUcYW0n2znQZoADBkGGxYL8EWqCuCZBmJPJ/Yy9fofJkyuuSuo5GSwo0XdEgw==}
-    dev: true
 
   /delegates/1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
@@ -6702,7 +6703,6 @@ packages:
 
   /ufo/0.8.5:
     resolution: {integrity: sha512-e4+UtA5IRO+ha6hYklwj6r7BjiGMxS0O+UaSg9HbaTefg4kMkzj4tXzEBajRR+wkxf+golgAWKzLbytCUDMJAA==}
-    dev: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -7311,7 +7311,7 @@ packages:
 
   /web-vitals/2.1.4:
     resolution: {integrity: sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==}
-    dev: true
+    dev: false
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
