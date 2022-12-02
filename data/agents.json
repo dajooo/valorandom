@@ -112,5 +112,11 @@
     "displayName": "Jett",
     "displayIconSmall": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png",
     "role": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4"
+  },
+  {
+    "uuid": "95b78ed7-4637-86d9-7e41-71ba8c293152",
+    "displayName": "Harbor",
+    "displayIconSmall": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayiconsmall.png",
+    "role": "4ee40330-ecdd-4f2f-98a8-eb1243428373"
   }
 ]
