@@ -13,7 +13,7 @@ export const useWeaponsStore = defineStore('weapons', () => {
       return
 
     const { data: fetchedWeapons } = await useFetch<ValorantWeapon[]>('/api/weapons')
-    weapons = fetchedWeapons.value
+    weapons = fetchedWeapons.value!
     if (selectedWeaponsCookie)
       selectedWeapons = selectedWeaponsCookie.split(',')
   }
@@ -67,4 +67,3 @@ export const useWeaponsStore = defineStore('weapons', () => {
 
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useWeaponsStore, import.meta.hot))
-

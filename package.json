@@ -1,8 +1,8 @@
 {
   "name": "valorandom",
-  "description": "Random Agent and Weapon picker for Valorant",
   "private": true,
   "packageManager": "pnpm@7.9.0",
+  "description": "Random Agent and Weapon picker for Valorant",
   "scripts": {
     "prepare": "nuxi prepare",
     "build": "nuxi build",
@@ -18,7 +18,7 @@
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@nuxtjs/color-mode": "3.2.0",
     "@pinia/nuxt": "0.4.6",
-    "@unocss/nuxt": "0.47.6",
+    "@unocss/nuxt": "0.48.0",
     "@vueuse/nuxt": "9.8.2",
     "eslint": "8.30.0",
     "nuxt": "3.0.0",
