@@ -1,6 +1,7 @@
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
+  routeRules: {
+    '/': { redirect: '/agents' },
+  },
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -11,7 +12,6 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
-    viteNode: false,
   },
   unocss: {
     preflight: true,

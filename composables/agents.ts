@@ -11,7 +11,7 @@ export const useAgentsStore = defineStore('agents', () => {
     if (agents.length > 0)
       return
     const { data: fetchedAgents } = await useFetch<ValorantAgent[]>('/api/agents')
-    agents = fetchedAgents.value
+    agents = fetchedAgents.value!
     if (selectedAgentsCookie)
       selectedAgents = selectedAgentsCookie.split(',')
   }
@@ -56,4 +56,3 @@ export const useAgentsStore = defineStore('agents', () => {
 
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useAgentsStore, import.meta.hot))
-
