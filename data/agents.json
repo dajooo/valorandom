@@ -118,5 +118,11 @@
     "displayName": "Harbor",
     "displayIconSmall": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayiconsmall.png",
     "role": "4ee40330-ecdd-4f2f-98a8-eb1243428373"
+  },
+  {
+    "uuid": "e370fa57-4757-3604-3648-499e1f642d3f",
+    "displayName": "Gekko",
+    "displayIconSmall": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayiconsmall.png",
+    "role": "1b47567f-8f7b-444b-aae3-b0c634622d10"
   }
 ]
