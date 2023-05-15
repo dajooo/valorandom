@@ -9,10 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@kevinmarrec/nuxt-pwa',
     '@nuxt/image-edge',
+    '@vue-macros/nuxt',
   ],
-  experimental: {
-    reactivityTransform: true,
-  },
   unocss: {
     preflight: true,
   },

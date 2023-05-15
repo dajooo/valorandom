@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { ValorantWeapon } from '~/valorantapi'
+
 definePageMeta({
   layout: 'picker',
 })
 const weaponStore = useWeaponsStore()
 await weaponStore.loadWeapons()
 
-const selectRandomWeapon = () => {
+function selectRandomWeapon() {
   if (weaponStore.selectedWeapons.length === 0)
     weaponStore.selectedWeapon = weaponStore.weapons[Math.floor(Math.random() * weaponStore.weapons.length)].uuid
   else
@@ -51,8 +53,8 @@ const priceCategories = $ref([
         </button>
       </div>
     </div>
-    <ul class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
-      <li v-for="weapon in weaponStore.weapons" :key="weapon.uuid">
+    <ul class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+      <li v-for="weapon in (weaponStore.weapons as ValorantWeapon[])" :key="weapon.uuid">
         <WeaponCard :weapon="weapon" />
       </li>
     </ul>

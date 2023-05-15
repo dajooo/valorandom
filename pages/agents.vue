@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { ValorantAgent } from '~/valorantapi'
+
 definePageMeta({
   layout: 'picker',
 })
 const agentsStore = useAgentsStore()
 
-const selectRandomAgent = () => {
+function selectRandomAgent() {
   if (agentsStore.selectedAgents.length === 0)
     agentsStore.selectedAgent = agentsStore.agents[Math.floor(Math.random() * agentsStore.agents.length)].uuid
   else
@@ -25,8 +27,8 @@ const selectRandomAgent = () => {
         Get Random Agent
       </button>
     </div>
-    <ul class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
-      <li v-for="agent in agentsStore.agents" :key="agent.uuid">
+    <ul class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+      <li v-for="agent in (agentsStore.agents as ValorantAgent[])" :key="agent.uuid">
         <AgentCard :agent="agent" />
       </li>
     </ul>
