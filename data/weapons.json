@@ -112,6 +112,14 @@
     "cost": 2250
   },
   {
+    "uuid": "5f0aaf7a-4289-3998-d5ff-eb9a5cf7ef5c",
+    "displayName": "Outlaw",
+    "displayIcon": "https://media.valorant-api.com/weapons/5f0aaf7a-4289-3998-d5ff-eb9a5cf7ef5c/displayicon.png",
+    "category": "Sniper",
+    "defaultSkinUuid": "740b9572-44b1-57bf-767e-6aa01811f94d",
+    "cost": 2400
+  },
+  {
     "uuid": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
     "displayName": "Marshal",
     "displayIcon": "https://media.valorant-api.com/weapons/c4883e50-4494-202c-3ec3-6b8a9284f00b/displayicon.png",
