@@ -139,6 +139,13 @@
     "role": "4ee40330-ecdd-4f2f-98a8-eb1243428373"
   },
   {
+    "uuid": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+    "displayName": "Iso",
+    "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png",
+    "displayIconSmall": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayiconsmall.png",
+    "role": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4"
+  },
+  {
     "uuid": "efba5359-4016-a1e5-7626-b1ae76895940",
     "displayName": "Vyse",
     "displayIcon": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/displayicon.png",
