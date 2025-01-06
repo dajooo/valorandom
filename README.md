@@ -2,7 +2,7 @@
 
 Valorandom is a random agent/weapon picker for Valorant.
 
-You can find a running instance of this project at [valorandom.vercel.app](https://valorandom.vercel.app).
+You can find a running instance of this project at [valorandom.dario. lol](https://valorandom.dario.lol).
 
 ## Features
 
