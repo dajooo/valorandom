@@ -16,7 +16,7 @@ function toggleDark() {
     <ClientOnly>
       <Icon :name="color.value === 'dark' ? 'ph:moon' : 'ph:sun'" class="text-4xl" />
       <template #fallback>
-        <Icon name="ph:sun" class="text-4xl" />
+        <Icon name="ph:moon" class="text-4xl" />
       </template>
     </ClientOnly>
   </button>
