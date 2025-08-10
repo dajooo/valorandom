@@ -150,6 +150,12 @@
     "role": "5fc02f99-4091-4486-a531-98459a3e95e9"
   },
   {
+    "uuid": "b444168c-4e35-8076-db47-ef9bf368f384",
+    "displayName": "Tejo",
+    "displayIcon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/displayicon.png",
+    "role": "1b47567f-8f7b-444b-aae3-b0c634622d10"
+  },
+  {
     "uuid": "df1cb487-4902-002e-5c17-d28e83e78588",
     "displayName": "Waylay",
     "displayIcon": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/displayicon.png",
