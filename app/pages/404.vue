@@ -5,7 +5,7 @@ const router = useRouter()
 <template>
   <main class="text-teal-700 px-4 py-10 text-center dark:text-gray-200">
     <div class="text-4xl">
-      <Icon name="ph:warning" class="inline-block" />
+      <div class="i-ph-warning inline-block" />
     </div>
     <div>Not found</div>
     <div>

@@ -33,7 +33,7 @@ const links = ref<Link[]>([
       </ul>
       <DarkToggle />
       <NuxtLink to="https://github.com/dajooo/valorandom" aria-label="github" target="_blank">
-        <Icon name="ph:github-logo" class="text-4xl" />
+        <div class="i-ph-github-logo text-4xl" />
       </NuxtLink>
     </div>
   </div>

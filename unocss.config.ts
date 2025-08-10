@@ -3,6 +3,7 @@ import { colorResolver } from '@unocss/preset-mini/utils'
 
 import {
   defineConfig,
+  presetIcons,
   presetWind4,
   transformerDirectives,
 } from 'unocss'
@@ -25,6 +26,9 @@ export default defineConfig({
   ],
   presets: [
     presetWind4(),
+    presetIcons({
+      scale: 1.2,
+    }),
   ],
   transformers: [
     transformerDirectives(),

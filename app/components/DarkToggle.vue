@@ -7,17 +7,7 @@ function toggleDark() {
 </script>
 
 <template>
-  <div class="hidden">
-    <Icon name="ph:moon" />
-    <Icon name="ph:sun" />
-  </div>
-
   <button class="!outline-none" aria-label="dark mode" @click="toggleDark">
-    <ClientOnly>
-      <Icon :name="color.value === 'dark' ? 'ph:moon' : 'ph:sun'" class="text-4xl" />
-      <template #fallback>
-        <Icon name="ph:moon" class="text-4xl" />
-      </template>
-    </ClientOnly>
+    <div class="dark:i-ph-moon i-ph-sun text-4xl" />
   </button>
 </template>

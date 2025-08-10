@@ -29,7 +29,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/image',
     '@vite-pwa/nuxt',
-    '@nuxt/icon',
   ],
   unocss: {
     preflight: true,
