@@ -37,6 +37,13 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  image: {
+    provider: 'ipx',
+    ipx: {
+      dir: '.nuxt/ipx',
+      maxAge: 31536000,
+    },
+  },
 
   nitro: {
     experimental: {
