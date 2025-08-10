@@ -21,9 +21,9 @@ const links = ref<Link[]>([
 </script>
 
 <template>
-  <div class="flex justify-between items-center">
+  <div class="flex items-center justify-between">
     <div />
-    <div class="flex items-center gap-2 p-4">
+    <div class="p-4 flex gap-2 items-center">
       <ul class="flex gap-4">
         <li v-for="link in links" :key="link.href">
           <NuxtLink :to="link.href" active-class="text-shadow-md text-shadow-blue-200">
@@ -33,7 +33,7 @@ const links = ref<Link[]>([
       </ul>
       <DarkToggle />
       <NuxtLink to="https://github.com/dajooo/valorandom" aria-label="github" target="_blank">
-        <div class="i-carbon-logo-github text-4xl" />
+        <Icon name="ph:github-logo" class="text-4xl" />
       </NuxtLink>
     </div>
   </div>

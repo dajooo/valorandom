@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ValorantWeapon } from '~/valorantapi'
-
 definePageMeta({
   layout: 'picker',
 })
@@ -8,13 +6,19 @@ const weaponStore = useWeaponsStore()
 await weaponStore.loadWeapons()
 
 function selectRandomWeapon() {
-  if (weaponStore.selectedWeapons.length === 0)
-    weaponStore.selectedWeapon = weaponStore.weapons[Math.floor(Math.random() * weaponStore.weapons.length)].uuid
-  else
-    weaponStore.selectedWeapon = weaponStore.selectedWeapons[Math.floor(Math.random() * weaponStore.selectedWeapons.length)]
+  if (weaponStore.selectedWeapons.length === 0) {
+    const weapon = weaponStore.weapons[Math.floor(Math.random() * weaponStore.weapons.length)]
+    if (weapon)
+      weaponStore.selectedWeapon = weapon.uuid
+  }
+  else {
+    const weaponId = weaponStore.selectedWeapons[Math.floor(Math.random() * weaponStore.selectedWeapons.length)]
+    if (weaponId)
+      weaponStore.selectedWeapon = weaponId
+  }
 }
 
-const priceCategories = $ref([
+const priceCategories = ref([
   {
     name: 'Low Buy',
     min: 0,
@@ -36,7 +40,7 @@ const priceCategories = $ref([
 <template>
   <div>
     <div class="flex justify-between">
-      <div class="flex flex-col lg:flex-row gap-2">
+      <div class="flex flex-col gap-2 lg:flex-row">
         <button class="btn btn-success" @click="weaponStore.selectAllWeapons">
           Select All
         </button>
@@ -47,14 +51,14 @@ const priceCategories = $ref([
           Get Random Weapon
         </button>
       </div>
-      <div class="flex flex-col lg:flex-row gap-2">
+      <div class="flex flex-col gap-2 lg:flex-row">
         <button v-for="priceCategory in priceCategories" :key="priceCategory.name" class="btn btn-primary" @click="weaponStore.selectWeaponsInPriceRange(priceCategory.min, priceCategory.max)">
           {{ priceCategory.name }} <span class="text-sm text-gray-300">${{ priceCategory.max }}</span>
         </button>
       </div>
     </div>
-    <ul class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
-      <li v-for="weapon in (weaponStore.weapons as ValorantWeapon[])" :key="weapon.uuid">
+    <ul class="grid grid-cols-1 mt-4 gap-4 lg:grid-cols-4 md:grid-cols-3">
+      <li v-for="weapon in weaponStore.weapons" :key="weapon.uuid">
         <WeaponCard :weapon="weapon" />
       </li>
     </ul>
