@@ -8,6 +8,6 @@ function toggleDark() {
 
 <template>
   <button class="!outline-none" aria-label="dark mode" @click="toggleDark">
-    <div class="dark:i-carbon-moon i-carbon-sun text-4xl" />
+    <div class="dark:i-ph-moon i-ph-sun text-4xl" />
   </button>
 </template>

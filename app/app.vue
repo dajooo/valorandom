@@ -17,7 +17,7 @@ await weaponsStore.loadWeapons()
 
 <style>
 html, body, #__nuxt {
-  height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }

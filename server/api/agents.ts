@@ -1,5 +1,4 @@
-import type { ValorantAgent } from '~/valorantapi'
-import data from '~/data/agents.json'
+import data from '../data/agents.json' with { type: 'json' }
 
 const agents: ValorantAgent[] = data
 

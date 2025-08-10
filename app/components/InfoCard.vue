@@ -23,9 +23,9 @@ const {
       'bg-gray-400 dark:bg-extragray': selected,
       'border-b-.3rem border-blue-500 -mb-1.2 card-glow': highlighted,
     }"
-    class="relative w-full flex items-center rounded-lg shadow-md overflow-hidden cursor-pointer"
+    class="rounded-lg flex w-full cursor-pointer shadow-md items-center relative overflow-hidden"
   >
-    <nuxt-img format="webp" class="w-24 h-24 object-contain m-2 z-1" :src="image" :alt="title" />
+    <NuxtImg format="webp" class="m-2 h-24 w-24 z-1 object-contain" :src="image" :alt="title" loading="eager" fetchpriority="high" />
     <div class="z-1">
       <h3 class="text-2xl">
         {{ title }}

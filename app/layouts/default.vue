@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <main class="py-8 px-10">
+    <main class="px-10 py-8">
       <slot />
     </main>
   </div>
