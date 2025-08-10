@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const props = defineProps({
+defineProps({
   error: Object as () => NuxtError,
 })
 
@@ -13,11 +13,11 @@ const router = useRouter()
     <div class="text-4xl">
       <div class="i-ph-warning inline-block" />
     </div>
-    <div v-if="error.statusCode === 404">
+    <div v-if="error?.statusCode === 404">
       Not found
     </div>
     <div v-else>
-      {{ error.statusCode }}
+      {{ error?.statusCode ?? 'Unknown error' }}
     </div>
     <div>
       <button class="text-sm btn m-3 mt-8" @click="router.back()">
